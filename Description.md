@@ -1,44 +1,51 @@
 ## 🔧 Database Schema
-1. user Table  
+### 1. user Table
+
 | Column   | Type    |
-| -------- | ------- |
-| user\_id | INTEGER |
+|----------|---------|
+| user_id  | INTEGER |
 | name     | TEXT    |
 | username | TEXT    |
 | password | TEXT    |
 | gender   | TEXT    |
 
-2. follower Table 
+### 2. follower Table
+
 | Column              | Type    |
-| ------------------- | ------- |
-| follower\_id        | INTEGER |
-| follower\_user\_id  | INTEGER |
-| following\_user\_id | INTEGER |
+|---------------------|---------|
+| follower_id         | INTEGER |
+| follower_user_id    | INTEGER |
+| following_user_id   | INTEGER |
 
-3. tweet Table
+### 3. tweet Table
+
 | Column     | Type     |
-| ---------- | -------- |
-| tweet\_id  | INTEGER  |
+|------------|----------|
+| tweet_id   | INTEGER  |
 | tweet      | TEXT     |
-| user\_id   | INTEGER  |
-| date\_time | DATETIME |
+| user_id    | INTEGER  |
+| date_time  | DATETIME |
 
-4. reply Table
+### 4. reply Table
+
 | Column     | Type     |
-| ---------- | -------- |
-| reply\_id  | INTEGER  |
-| tweet\_id  | INTEGER  |
+|------------|----------|
+| reply_id   | INTEGER  |
+| tweet_id   | INTEGER  |
 | reply      | TEXT     |
-| user\_id   | INTEGER  |
-| date\_time | DATETIME |
+| user_id    | INTEGER  |
+| date_time  | DATETIME |
 
-5. like Table
+### 5. like Table
+
 | Column     | Type     |
-| ---------- | -------- |
-| like\_id   | INTEGER  |
-| tweet\_id  | INTEGER  |
-| user\_id   | INTEGER  |
-| date\_time | DATETIME |
+|------------|----------|
+| like_id    | INTEGER  |
+| tweet_id   | INTEGER  |
+| user_id    | INTEGER  |
+| date_time  | DATETIME |
+
+---
 
  ## ✅ Core Functionalities
  
