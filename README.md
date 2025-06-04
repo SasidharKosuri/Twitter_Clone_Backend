@@ -24,7 +24,6 @@ The backend supports essential Twitter operations such as user registration and 
 - **Backend:** Node.js, Express.js
 - **Database:** SQLite
 - **Security:** bcrypt for password hashing, JWT for session management
-- **Tools:** Postman for API testing
 
 ---
 
