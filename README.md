@@ -1,4 +1,3 @@
-# Twitter_Clone_Backend
 # 🐦 Twitter Clone Backend
 
 A secure, feature-rich, and scalable backend clone of Twitter developed using Node.js, Express.js, and SQLite. This project is designed to simulate the core functionality of the Twitter platform from a backend perspective. It includes robust user authentication using JWT tokens, secure password handling with bcrypt, and a relational database structure that manages users, tweets, followers, likes, and replies efficiently.
