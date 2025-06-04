@@ -50,9 +50,12 @@
  ## ✅ Core Functionalities
  
 **🔐 User Registration** (/register/ - POST)  
-Handles new user registration with password validation and username checks.
-**Sample Request:**
-{
+Handles new user registration with password validation and username checks.  
+
+**Sample Request:**  
+
+{  
+
   "username": "adam_richard",  
   "password": "richard_567",  
   "name": "Adam Richard",  
