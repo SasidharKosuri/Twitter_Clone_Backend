@@ -49,15 +49,15 @@
 
  ## ✅ Core Functionalities
  
-🔐 User Registration (/register/ - POST) \n
+**🔐 User Registration** (/register/ - POST)  
 Handles new user registration with password validation and username checks.
-Sample Request:
+**Sample Request:**
 {
-  "username": "adam_richard",
-  "password": "richard_567",
-  "name": "Adam Richard",
-  "gender": "male"
-}
+  "username": "adam_richard",  
+  "password": "richard_567",  
+  "name": "Adam Richard",  
+  "gender": "male"  
+  }
 
 Scenarios:
 - Username already exists → 400: User already exists
