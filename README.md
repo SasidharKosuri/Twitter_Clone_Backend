@@ -44,14 +44,13 @@ The backend supports essential Twitter operations such as user registration and 
 
 ## 🔐 Authentication
 All routes (except /register/ and /login/) are protected and require a valid JWT token in the Authorization header: 
-- Authorization: Bearer <your-jwt-token>
+- Authorization: Bearer your-jwt-token
 
 ## 📂 Folder Structure
-.
-├── app.js              # Main Express server
-├── twitterClone.db     # SQLite database file
-├── package.json
-└── README.md
+ - app.js              # Main Express server
+ - twitterClone.db     # SQLite database file
+ - package.json
+ - README.md
 
 📑 API Endpoints Summary
 | Method | Endpoint                    | Description                                    |
