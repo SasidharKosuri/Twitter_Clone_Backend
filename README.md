@@ -47,8 +47,8 @@ All routes (except /register/ and /login/) are protected and require a valid JWT
 - Authorization: Bearer your-jwt-token
 
 ## 📂 Folder Structure
- - app.js              # Main Express server
- - twitterClone.db     # SQLite database file
+ - app.js              -> Main Express server
+ - twitterClone.db     -> SQLite database file
  - package.json
  - README.md
 
