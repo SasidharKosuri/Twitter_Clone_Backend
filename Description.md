@@ -49,7 +49,7 @@
 
  ## ✅ Core Functionalities
  
-🔐 User Registration (/register/ - POST)
+🔐 User Registration (/register/ - POST) \n
 Handles new user registration with password validation and username checks.
 Sample Request:
 {
