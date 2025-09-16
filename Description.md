@@ -61,7 +61,7 @@ Handles new user registration with password validation and username checks.
   }
 
 Scenarios:
-- Username already exists → 400: User already exists
+Username already exists → 400: User already exists
 - Password < 6 characters → 400: Password is too short
 - Success → 200: User created successfully
 
