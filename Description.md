@@ -61,17 +61,20 @@ Handles new user registration with password validation and username checks.
   }
 
 Scenarios:
-Username already exists → 400: User already exists
+- Username already exists → 400: User already exists
 - Password < 6 characters → 400: Password is too short
 - Success → 200: User created successfully
 
 **🔐 User Login**   (/login/ - POST)  
-Authenticates existing users and returns a JWT token on success.  
+Authenticates existing users and returns a JWT token on success.
+
+ 
 **Sample Request:**  
 {  
 "username": "JoeBiden",  
 "password": "biden@123"  
-}
+} 
+
 Scenarios:
 - Invalid user → 400: Invalid user
 - Incorrect password → 400: Invalid password
@@ -87,6 +90,7 @@ Scenarios:
 **📰 Feed & User Data APIs**  
 /user/tweets/feed/ – GET  
 Returns the latest 4 tweets from users the logged-in user follows.  
+
 Sample Response:  
 [  
 {  
@@ -98,12 +102,14 @@ Sample Response:
 
 /user/following/ – GET  
 Returns names of users the logged-in user is following.  
+
 [  
 { "name": "Narendra Modi" }  
 ]
 
 /user/followers/ – GET  
 Returns names of users who follow the logged-in user.  
+
 [  
 { "name": "Barack Obama" }  
 ]
@@ -111,10 +117,12 @@ Returns names of users who follow the logged-in user.
 **🧾 Tweet APIs**  
 /tweets/:tweetId/ – GET  
 Returns tweet details (tweet, likes, replies, date) only if the user follows the tweet author.  
+
 If unauthorized:  
 401: Invalid Request
 
 If allowed:  
+
 {  
 "tweet": "Some inspiring message",  
 "likes": 5,  
@@ -123,13 +131,15 @@ If allowed:
 }
 
 /tweets/:tweetId/likes/ – GET  
-Returns usernames who liked the tweet (if authorized).  
+Returns usernames who liked the tweet (if authorized).
+  
 {  
 "likes": ["albert", "joe", "elon"]  
 }
 
 /tweets/:tweetId/replies/ – GET  
 Returns names and replies of users who replied to the tweet.  
+
 {  
 "replies": [  
 { "name": "Narendra Modi", "reply": "When you see it.." }  
@@ -137,8 +147,10 @@ Returns names and replies of users who replied to the tweet.
 }
 
 **🗂 User’s Own Tweets**  
+
 /user/tweets/ – GET  
 Returns all tweets by the logged-in user with their likes and replies count.  
+
 [  
 {  
 "tweet": "Ready to don the Blue and Gold",  
@@ -149,16 +161,19 @@ Returns all tweets by the logged-in user with their likes and replies count.
 ]
 
 /user/tweets/ – POST  
-Creates a new tweet.  
+Creates a new tweet.
+  
 **Sample Request:**  
 {  
 "tweet": "The Mornings..."  
 }  
+
 **Response:**  
 Created a Tweet
 
 /tweets/:tweetId/ – DELETE  
-Deletes a tweet only if it belongs to the user.  
+Deletes a tweet only if it belongs to the user. 
+ 
 Unauthorized delete:  
 401: Invalid Request
 
